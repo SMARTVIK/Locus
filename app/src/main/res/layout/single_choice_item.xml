@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+     android:layout_height="wrap_content">
+
+    <TextView
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:padding="15dp"
+        android:id="@+id/rgSingleChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

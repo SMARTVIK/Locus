@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comment_box"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <FrameLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_gravity="start"
+            android:text="Provide comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Switch
+            android:id="@+id/switchComment"
+            android:layout_gravity="end"
+            android:text="provide comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/commentFrame"
+        android:layout_margin="15dp"
+        android:background="@drawable/comment_box_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:inputType="textCapSentences"
+            android:padding="15dp"
+            android:background="@null"
+            android:id="@+id/etCommentBox"
+            android:hint="Type a comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>
